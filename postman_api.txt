@@ -1,0 +1,1348 @@
+{
+	"info": {
+		"_postman_id": "bd182e73-4fa2-447d-9aa8-2d0b87b313fd",
+		"name": "ROR lab_three_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44856613",
+		"_collection_link": "https://mohammedessam-8425245.postman.co/workspace/7f74d50c-69af-4888-8feb-132fe78d668d/collection/44856613-bd182e73-4fa2-447d-9aa8-2d0b87b313fd?action=share&source=collection_link&creator=44856613"
+	},
+	"item": [
+		{
+			"name": "Post user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Alice\",\r\n  \"email\": \"alice@example.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Post user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Alice\",\r\n  \"email\": \"alice@example.com\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "location",
+							"value": "http://localhost:3000/users/13"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "Accept"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"ac1c0dc99fbc12bae376304d7c0778ee\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "099ac8bf-e6f0-4d6b-a969-145a25da1437"
+						},
+						{
+							"key": "x-runtime",
+							"value": "2.546601"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=15.99, start_transaction.active_record;dur=0.01, transaction.active_record;dur=29.88, process_action.action_controller;dur=51.85"
+						},
+						{
+							"key": "Content-Length",
+							"value": "132"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 13,\n    \"name\": \"Alice\",\n    \"email\": \"alice@example.com\",\n    \"created_at\": \"2025-05-11T20:29:51.841Z\",\n    \"updated_at\": \"2025-05-11T20:29:51.841Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "GET one user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET one user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "Accept"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"839dcd052a06628757c98b16a6a575d2\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "92c1e6cb-0baf-41b0-9e31-c80ce0abe880"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.171827"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=0.21, instantiation.active_record;dur=0.12, process_action.action_controller;dur=6.30"
+						},
+						{
+							"key": "Content-Length",
+							"value": "132"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"name\": \"User 4\",\n    \"email\": \"user4@example.com\",\n    \"created_at\": \"2025-05-11T19:20:31.768Z\",\n    \"updated_at\": \"2025-05-11T19:20:31.768Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "GET users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "Accept"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"e7ea56eebfcc58648afeac0294f83673\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "f0219660-44ad-4264-a321-13b4ac19b4aa"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.219034"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=0.15, instantiation.active_record;dur=0.14, process_action.action_controller;dur=16.07"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1593"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"User 1\",\n        \"email\": \"user1@example.com\",\n        \"created_at\": \"2025-05-11T19:20:31.666Z\",\n        \"updated_at\": \"2025-05-11T19:20:31.666Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"User 2\",\n        \"email\": \"user2@example.com\",\n        \"created_at\": \"2025-05-11T19:20:31.728Z\",\n        \"updated_at\": \"2025-05-11T19:20:31.728Z\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"User 4\",\n        \"email\": \"user4@example.com\",\n        \"created_at\": \"2025-05-11T19:20:31.768Z\",\n        \"updated_at\": \"2025-05-11T19:20:31.768Z\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"User 5\",\n        \"email\": \"user5@example.com\",\n        \"created_at\": \"2025-05-11T19:20:31.782Z\",\n        \"updated_at\": \"2025-05-11T19:20:31.782Z\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"User 1\",\n        \"email\": \"user1@example.com\",\n        \"created_at\": \"2025-05-11T19:28:19.761Z\",\n        \"updated_at\": \"2025-05-11T19:28:19.761Z\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"User 2\",\n        \"email\": \"user2@example.com\",\n        \"created_at\": \"2025-05-11T19:28:19.833Z\",\n        \"updated_at\": \"2025-05-11T19:28:19.833Z\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"User 3\",\n        \"email\": \"user3@example.com\",\n        \"created_at\": \"2025-05-11T19:28:19.861Z\",\n        \"updated_at\": \"2025-05-11T19:28:19.861Z\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"User 4\",\n        \"email\": \"user4@example.com\",\n        \"created_at\": \"2025-05-11T19:28:19.872Z\",\n        \"updated_at\": \"2025-05-11T19:28:19.872Z\"\n    },\n    {\n        \"id\": 10,\n        \"name\": \"User 5\",\n        \"email\": \"user5@example.com\",\n        \"created_at\": \"2025-05-11T19:28:19.888Z\",\n        \"updated_at\": \"2025-05-11T19:28:19.888Z\"\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Alaa\",\n        \"email\": \"alaa@mail.com\",\n        \"created_at\": \"2025-05-11T19:45:28.073Z\",\n        \"updated_at\": \"2025-05-11T19:51:24.175Z\"\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Alice\",\n        \"email\": \"alice@example.com\",\n        \"created_at\": \"2025-05-11T19:48:28.532Z\",\n        \"updated_at\": \"2025-05-11T19:48:28.532Z\"\n    },\n    {\n        \"id\": 13,\n        \"name\": \"Alice\",\n        \"email\": \"alice@example.com\",\n        \"created_at\": \"2025-05-11T20:29:51.841Z\",\n        \"updated_at\": \"2025-05-11T20:29:51.841Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Edit user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Alaa\",\r\n    \"email\" : \"alaa@mail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"11"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Edit user",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Alaa\",\r\n    \"email\" : \"alaa@mail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"11"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "Accept"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"53549bc548938d1c13c5b8f6b5bf0831\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "57137706-7ab0-470c-978c-76e05d3eb13b"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.153611"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=0.13, instantiation.active_record;dur=0.06, process_action.action_controller;dur=12.58"
+						},
+						{
+							"key": "Content-Length",
+							"value": "127"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Alaa\",\n    \"email\": \"alaa@mail.com\",\n    \"id\": 11,\n    \"created_at\": \"2025-05-11T19:45:28.073Z\",\n    \"updated_at\": \"2025-05-11T19:51:24.175Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"13"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete user",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"13"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "x-request-id",
+							"value": "b50d722b-0f7e-4fbd-bb2d-db62ca67e1eb"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.213399"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.02, sql.active_record;dur=30.61, instantiation.active_record;dur=0.07, start_transaction.active_record;dur=0.01, transaction.active_record;dur=13.24, process_action.action_controller;dur=59.37"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "GET posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET posts",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "Accept"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"7967a55ee7982032e870902d61cfd2a3\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "ccf41122-b130-4081-992b-4073a54a9b01"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.421685"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=0.17, instantiation.active_record;dur=0.14, process_action.action_controller;dur=21.68"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2117"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"Post 1 by User 1\",\n        \"content\": \"This is the content for post 1 by User 1\",\n        \"user_id\": 6,\n        \"created_at\": \"2025-05-11T19:28:19.955Z\",\n        \"updated_at\": \"2025-05-11T19:28:19.955Z\",\n        \"creator_id\": 6\n    },\n    {\n        \"id\": 2,\n        \"title\": \"Post 2 by User 1\",\n        \"content\": \"This is the content for post 2 by User 1\",\n        \"user_id\": 6,\n        \"created_at\": \"2025-05-11T19:28:20.063Z\",\n        \"updated_at\": \"2025-05-11T19:28:20.063Z\",\n        \"creator_id\": 6\n    },\n    {\n        \"id\": 3,\n        \"title\": \"Post 1 by User 2\",\n        \"content\": \"This is the content for post 1 by User 2\",\n        \"user_id\": 7,\n        \"created_at\": \"2025-05-11T19:28:20.128Z\",\n        \"updated_at\": \"2025-05-11T19:28:20.128Z\",\n        \"creator_id\": 7\n    },\n    {\n        \"id\": 4,\n        \"title\": \"Post 2 by User 2\",\n        \"content\": \"This is the content for post 2 by User 2\",\n        \"user_id\": 7,\n        \"created_at\": \"2025-05-11T19:28:20.195Z\",\n        \"updated_at\": \"2025-05-11T19:28:20.195Z\",\n        \"creator_id\": 7\n    },\n    {\n        \"id\": 5,\n        \"title\": \"First Post\",\n        \"content\": \"This is an edited post!\",\n        \"user_id\": 8,\n        \"created_at\": \"2025-05-11T19:28:20.292Z\",\n        \"updated_at\": \"2025-05-11T19:55:56.946Z\",\n        \"creator_id\": 8\n    },\n    {\n        \"id\": 6,\n        \"title\": \"Post 2 by User 3\",\n        \"content\": \"This is the content for post 2 by User 3\",\n        \"user_id\": 8,\n        \"created_at\": \"2025-05-11T19:28:20.352Z\",\n        \"updated_at\": \"2025-05-11T19:28:20.352Z\",\n        \"creator_id\": 8\n    },\n    {\n        \"id\": 7,\n        \"title\": \"Post 1 by User 4\",\n        \"content\": \"This is the content for post 1 by User 4\",\n        \"user_id\": 9,\n        \"created_at\": \"2025-05-11T19:28:20.442Z\",\n        \"updated_at\": \"2025-05-11T19:28:20.442Z\",\n        \"creator_id\": 9\n    },\n    {\n        \"id\": 8,\n        \"title\": \"Post 2 by User 4\",\n        \"content\": \"This is the content for post 2 by User 4\",\n        \"user_id\": 9,\n        \"created_at\": \"2025-05-11T19:28:20.492Z\",\n        \"updated_at\": \"2025-05-11T19:28:20.492Z\",\n        \"creator_id\": 9\n    },\n    {\n        \"id\": 9,\n        \"title\": \"Post 1 by User 5\",\n        \"content\": \"This is the content for post 1 by User 5\",\n        \"user_id\": 10,\n        \"created_at\": \"2025-05-11T19:28:20.527Z\",\n        \"updated_at\": \"2025-05-11T19:28:20.527Z\",\n        \"creator_id\": 10\n    },\n    {\n        \"id\": 10,\n        \"title\": \"Post 2 by User 5\",\n        \"content\": \"This is the content for post 2 by User 5\",\n        \"user_id\": 10,\n        \"created_at\": \"2025-05-11T19:28:20.578Z\",\n        \"updated_at\": \"2025-05-11T19:28:20.578Z\",\n        \"creator_id\": 10\n    },\n    {\n        \"id\": 11,\n        \"title\": \"Test Post\",\n        \"content\": \"This is my test post!\",\n        \"user_id\": 1,\n        \"created_at\": \"2025-05-11T19:54:50.775Z\",\n        \"updated_at\": \"2025-05-11T19:54:50.775Z\",\n        \"creator_id\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GET post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/posts/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET post",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/posts/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "Accept"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"40a894710dc44222ec6e19bc6bfa7676\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "b64a1984-9dd5-4813-b185-dc9a6d2f1383"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.161952"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=0.42, instantiation.active_record;dur=0.06, process_action.action_controller;dur=6.81"
+						},
+						{
+							"key": "Content-Length",
+							"value": "172"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 5,\n    \"title\": \"First Post\",\n    \"content\": \"This is an edited post!\",\n    \"user_id\": 8,\n    \"created_at\": \"2025-05-11T19:28:20.292Z\",\n    \"updated_at\": \"2025-05-11T19:55:56.946Z\",\n    \"creator_id\": 8\n}"
+				}
+			]
+		},
+		{
+			"name": "Post post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Test Post\",\r\n  \"content\": \"This is my test post!\",\r\n  \"user_id\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Post post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Test Post\",\r\n  \"content\": \"This is my test post!\",\r\n  \"user_id\": 1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "location",
+							"value": "http://localhost:3000/posts/12"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "Accept"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"b41196a8e8b2eac17caaeef290525424\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "c3f9c9d7-6db9-4995-8825-11733bfbe6b9"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.228322"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=22.91, start_transaction.active_record;dur=0.04, instantiation.active_record;dur=0.59, transaction.active_record;dur=39.79, process_action.action_controller;dur=70.17"
+						},
+						{
+							"key": "Content-Length",
+							"value": "173"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 12,\n    \"title\": \"Test Post\",\n    \"content\": \"This is my test post!\",\n    \"user_id\": 1,\n    \"created_at\": \"2025-05-11T20:31:43.046Z\",\n    \"updated_at\": \"2025-05-11T20:31:43.046Z\",\n    \"creator_id\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Edit post",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"First Post\",\r\n  \"content\": \"This is an edited post!\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/posts/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Edit post",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"First Post\",\r\n  \"content\": \"This is an edited post!\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/posts/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "Accept"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"c08ae579e52fdaea73dbfda7e2189433\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "3535a66e-aa81-4d36-8472-38a80657d451"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.163601"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=0.19, instantiation.active_record;dur=0.07, process_action.action_controller;dur=11.06"
+						},
+						{
+							"key": "Content-Length",
+							"value": "172"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"title\": \"First Post\",\n    \"content\": \"This is an edited post!\",\n    \"user_id\": 8,\n    \"id\": 5,\n    \"created_at\": \"2025-05-11T19:28:20.292Z\",\n    \"updated_at\": \"2025-05-11T19:55:56.946Z\",\n    \"creator_id\": 8\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/posts/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"12"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete post",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/posts/12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"12"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "x-request-id",
+							"value": "78636544-aaae-4086-a224-ae9b0c08abf1"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.193126"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.02, sql.active_record;dur=10.98, instantiation.active_record;dur=0.07, start_transaction.active_record;dur=0.01, transaction.active_record;dur=16.95, process_action.action_controller;dur=34.89"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "GET posts editors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/posts/1/editors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"1",
+						"editors"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET posts editors",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/posts/1/editors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"1",
+								"editors"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "Accept"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"f49ac6593f03c7f418a67823edf60a1f\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "753d5b8f-72b4-446a-bb6a-dea104f1af23"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.414203"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=0.33, instantiation.active_record;dur=0.20, process_action.action_controller;dur=272.50"
+						},
+						{
+							"key": "Content-Length",
+							"value": "400"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 7,\n        \"name\": \"User 2\",\n        \"email\": \"user2@example.com\",\n        \"created_at\": \"2025-05-11T19:28:19.833Z\",\n        \"updated_at\": \"2025-05-11T19:28:19.833Z\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"User 4\",\n        \"email\": \"user4@example.com\",\n        \"created_at\": \"2025-05-11T19:28:19.872Z\",\n        \"updated_at\": \"2025-05-11T19:28:19.872Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"User 2\",\n        \"email\": \"user2@example.com\",\n        \"created_at\": \"2025-05-11T19:20:31.728Z\",\n        \"updated_at\": \"2025-05-11T19:20:31.728Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "POST post editor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 4\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/posts/1/editors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"1",
+						"editors"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST post editor",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 4\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/posts/1/editors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"1",
+								"editors"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "Accept"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"839dcd052a06628757c98b16a6a575d2\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "6fdeb1ea-2ee0-4c0e-a76e-9bb4da2905e8"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.208019"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=15.05, instantiation.active_record;dur=0.25, start_transaction.active_record;dur=0.04, transaction.active_record;dur=15.32, process_action.action_controller;dur=52.37"
+						},
+						{
+							"key": "Content-Length",
+							"value": "132"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"name\": \"User 4\",\n    \"email\": \"user4@example.com\",\n    \"created_at\": \"2025-05-11T19:20:31.768Z\",\n    \"updated_at\": \"2025-05-11T19:20:31.768Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete post editor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/posts/2/editors/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"2",
+						"editors",
+						"8"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete post editor",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/posts/2/editors/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"2",
+								"editors",
+								"8"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "x-request-id",
+							"value": "d0a9f7fe-a708-4042-b498-94af6a856d2c"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.201061"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=8.98, instantiation.active_record;dur=0.71, start_transaction.active_record;dur=0.01, transaction.active_record;dur=27.61, process_action.action_controller;dur=51.57"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
