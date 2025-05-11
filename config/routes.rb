@@ -9,4 +9,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  resources :users
+  resources :posts do
+  resources :editors, only: [:index, :create, :destroy], controller: 'post_editors'
+  end
 end
